@@ -67,12 +67,12 @@ const Navbar = () => {
 
       {/* Action Buttons */}
       <div className="hidden md:flex items-center gap-4">
-        <Link href="/sorten">
+        <Link href="/sorten" onClick={handleLinkClick}>
           <button className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transform hover:scale-105 transition duration-300">
             Try Now
           </button>
         </Link>
-        <Link href="/github">
+        <Link href="/github" onClick={handleLinkClick}>
           <button className="bg-transparent border-2 border-white text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-blue-900 transition duration-300">
             GitHub
           </button>
@@ -132,14 +132,14 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="mt-4">
-            <Link href="/sorten">
+            <Link href="/sorten" onClick={handleLinkClick}>
               <button className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transform hover:scale-105 transition duration-300">
                 Try Now
               </button>
             </Link>
           </li>
           <li className="mt-4">
-            <Link href="/github">
+            <Link href="/github" onClick={handleLinkClick}>
               <button className="bg-transparent border-2 border-white text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-blue-900 transition duration-300">
                 GitHub
               </button>
