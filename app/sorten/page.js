@@ -72,9 +72,9 @@ const Page = () => {
           </button>
           <Link
             href="/all-urls"
-            className="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-full transition transform hover:scale-105 shadow-lg"
+            className=" flex items-center justify-center w-full sm:w-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-full transition transform hover:scale-105 shadow-lg"
           >
-            Show All Shortened URLs
+            <span>Show All Shortened URLs</span>
           </Link>
         </div>
 
