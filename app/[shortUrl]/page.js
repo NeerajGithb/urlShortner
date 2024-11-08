@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import clientPromise from "@/lib/mongodb";
 
 export default async function Page({ params }) {
-    const shortUrl = params.shortUrl;
+    const { shortUrl } = await params;
 
     const client = await clientPromise;
     const db = client.db("bitlinks");

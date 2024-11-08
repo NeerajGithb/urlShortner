@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-r from-purple-600 to-indigo-900 text-white">
+    <main className="bg-gradient-to-r from-purple-600 to-indigo-900 text-white z-10">
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 h-[92vh] px-6 py-16 ">
         {/* Left Column (Text) */}

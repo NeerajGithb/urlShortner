@@ -35,7 +35,7 @@ const Page = () => {
   };
 
   return (
-    <main className="flex flex-col  bg-gradient-to-br from-purple-50 to-purple-100 p-6">
+    <main className="flex flex-col  bg-gradient-to-br from-purple-50 to-purple-100 p-6 z-10">
       <div className="mx-auto max-w-lg w-full bg-white shadow-lg rounded-xl p-6 sm:p-8 md:p-10">
         <h2 className="text-2xl sm:text-4xl font-extrabold text-purple-700 text-center mb-6">
           Generate Your Short URL
@@ -70,6 +70,12 @@ const Page = () => {
           >
             Generate
           </button>
+          <Link
+            href="/all-urls"
+            className="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-full transition transform hover:scale-105 shadow-lg"
+          >
+            Show All Shortened URLs
+          </Link>
         </div>
 
         {/* Show generated URL */}
@@ -83,6 +89,7 @@ const Page = () => {
             >
               {generatedUrl}
             </Link>
+            
           </div>
         )}
 
